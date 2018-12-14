@@ -1,0 +1,79 @@
+<!DOCTYPE html lang="pt-br">
+<meta charset="utf-8">
+
+<html>
+    <head>
+    	 <title>Noticias Esportes</title> 
+
+        <link rel="stylesheet" type="text/css" href="/pronatec/estilo.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="/pronatec/script.js"></script>
+
+        <style>
+        .mySlides {display:none;}
+        #legenda{
+            font-size: 20px;
+            color: 'black';
+        }
+        img {
+            margin-left:5%; width:90%; height: 400px;
+        }
+
+        </style>
+    </head>
+    <body>
+        
+        <nav id="menu">
+            
+            <ul>
+
+                <li><a href="/pronatec/">Início</a></li>
+                <li><a href="/pronatec/outros.html">Notícias</a></li>
+                <li><a href="/pronatec/contato.html">Contato</a></li>
+                <label style="width: 10px"></label>||
+                <li><a href="https://alexandrepronatec.github.io/2018_2/Aulas.html">Página da Disciplina</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div id="Conteudo">
+
+            
+            
+            <h2 id='titulo'> Teste </h2>
+            <div class="w3-content" style="max-width:800px">
+
+                <img class="mySlides" src="https://s2.glbimg.com/47mVLVc6hNNtU_jwaOnwfQF0C8Q=/0x0:1717x1193/1000x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/11/14/rib6673.jpg">
+                <img class="mySlides" src="https://s2.glbimg.com/fmmsD_Py_qd4iSpz6V-qqOdCRh0=/0x0:897x726/1000x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/12/14/aviao.png">
+                <img class="mySlides" src="https://s2.glbimg.com/NSd0rbqR9MrW2RWORU7-cX1A8-o=/113x66:1123x787/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/V/F/MUR7zXSzKcoNlsrXWE9g/neymar.jpg">
+                <img class="mySlides" src="https://s2.glbimg.com/ShEoWLQRjZW5faA3LSs_ybceqAE=/0x0:2000x1333/1000x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/12/02/ramiro_otBXV0R.jpg">
+
+            </div>
+
+            <div class="w3-center">
+                
+                
+                <p id ='legenda'>T</p>
+                
+
+                <div class="w3-section">
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                  
+                </div>
+                  
+                <button class="w3-button demo" onclick="currentDiv(1)">Flamengo</button> 
+                <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+                <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+                <button class="w3-button demo" onclick="currentDiv(4)">4</button>  
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+            currentDiv(1);    
+        </script>
+        
+    </body>
+</html>

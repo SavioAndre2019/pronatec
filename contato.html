@@ -1,0 +1,81 @@
+<!DOCTYPE html lang="pt-br">
+<meta charset="utf-8">
+
+<html>
+    <head>
+    	 <title> Noticias Esportes .</title> 
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="script" type="javascript" href="script.js"> 
+
+    </head>
+    <body>
+
+        <nav id="menu">
+            <ul>
+
+                <li><a href="/pronatec/">Início</a></li>
+                <li><a href="/pronatec/outros.html">Notícias</a></li>
+                <li><a href="/pronatec/contato.html">Contato</a></li>
+                <label style="width: 10px"></label>||
+                <li><a href="https://alexandrepronatec.github.io/2018_2/Aulas.html">Página da Disciplina</a></li>
+
+            </ul>
+            
+            </nav>
+
+        	<div id="Conteudo">
+
+                <h1>Flamengo</h1>   
+
+                <p class="nome">
+                    <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+                    <label for="nome">Nome</label>
+                </p>
+
+                <p class="fone">
+                    <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+                    <label for="fone">Fone</label>
+                </p>
+
+                <p>
+                    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+                    <label for="email">Email*</label>
+                </p>
+
+                <p> 
+                    <textarea id="msg" placeholder="Deixe sua opnião*"></textarea>
+                </p>
+                
+                <p class="submit">
+                    <input type="submit" onclick="Enviar();" value="Enviar" />
+                </p>
+
+
+            </div>
+
+            <script type="text/javascript">
+                
+                function Enviar(){
+
+                    var mail = document.getElementById('emailid').value; 
+                    var msg = document.getElementById('msg').value;
+
+                    if(msg != "" && mail != "")
+                        alert("\nMensagem Enviada: \n\n" + msg + ".\n\n\nPor : "+mail);
+                    else{
+                        alert("Formulário incompleto, preencha o formulário para nos contatar");
+                    }
+
+                }
+
+            </script>
+
+            <div id="Rodape">
+
+                <p>Site desenvolvido para as aulas práticas, da disciplina Implantação e Administração de Serviços Web, do curso medio-técnico em Redes de Computadores, vinculado ao PRONATEC - Picos.</p> 
+
+            </div>
+
+    </body>
+</html>
